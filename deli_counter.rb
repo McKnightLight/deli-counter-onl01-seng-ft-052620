@@ -1,8 +1,8 @@
 def line (deli) 
-  if deli.length == 0 
-    puts "The line is currently empty."
+  if deli.length > 0
+    puts "the line is currently:"
   else 
-    message = "The line is currently:"
+    message = "The line is currently empty."
     
   deli.each_with_index do |name, index| 
     message += " #{index.to_i+1}. #{name}"
@@ -17,7 +17,7 @@ def take_a_number (deli,name)
 end
 
 def now_serving (deli)
-  if deli.empty? == true 
+  if deli.empty? == true
     puts "There is nobody waiting to be served!"
   elsif deli.empty? == false 
     puts "Currently serving #{deli.shift}."
