@@ -6,8 +6,8 @@ def line(deli)
   else 
     message = "The line is currently:"
     
-  deli.each_with_index do |value, index| 
-    message += " #{index.to_i+1}. #{value}"
+  deli.each_with_index do |name, index| 
+    message += " #{index.to_i+1}. #{name}"
   end 
   puts "#{message}"
   end 
